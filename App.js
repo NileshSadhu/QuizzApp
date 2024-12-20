@@ -3,6 +3,7 @@ import React from 'react'
 import GuessCapital from './Components/GuessCapital'
 import { QuizProvider } from './Context/Connection'
 import { useFonts } from 'expo-font'
+import GuessCountry from './Components/GuessCountry'
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -13,7 +14,8 @@ const App = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <QuizProvider>
         <StatusBar barStyle="light-content" />
-        <GuessCapital />
+        {/* <GuessCapital /> */}
+        <GuessCountry />
       </QuizProvider>
     </SafeAreaView>
   )
