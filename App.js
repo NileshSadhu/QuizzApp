@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text, SafeAreaView, StatusBar } from 'react-native'
+import React from 'react'
+import GuessCapital from './Components/GuessCapital'
+import { QuizProvider } from './Context/Connection'
+import { useFonts } from 'expo-font'
 
-export default function App() {
+const App = () => {
+  const [fontsLoaded] = useFonts({
+    'RobotoSerif-Medium': require('./assets/Fonts/RobotoSerif-Medium.ttf'),
+  });
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <SafeAreaView style={{ flex: 1 }}>
+      <QuizProvider>
+        <StatusBar barStyle="light-content" />
+        <GuessCapital />
+      </QuizProvider>
+    </SafeAreaView>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
