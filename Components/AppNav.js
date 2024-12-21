@@ -14,8 +14,15 @@ const AppNav = () => {
             <Tab.Navigator
                 screenOptions={{
                     headerShown: false,
-                    tabBarActiveTintColor: 'red',
-                    tabBarInactiveTintColor: '#465f78',
+                    tabBarActiveTintColor: '#fff',
+                    tabBarInactiveTintColor: '#000',
+                    tabBarStyle: {
+                        backgroundColor: '#ffca00',
+                        elevation: 0,
+                        borderTopWidth: 0,
+                    },
+                    tabBarBackground: () => <View style={{ flex: 1, backgroundColor: 'transparent' }} />,
+
                 }}
             >
                 <Tab.Screen

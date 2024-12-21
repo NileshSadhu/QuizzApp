@@ -30,7 +30,7 @@ const GuessCountry = ({ navigator }) => {
     return (
         <View style={styles.container}>
             <ImageBackground
-                source={require("../assets/Images/countrys.png")}
+                source={require("../assets/Images/background.jpg")}
                 resizeMode='cover'
                 style={styles.bgImage}
             >
@@ -42,7 +42,7 @@ const GuessCountry = ({ navigator }) => {
                         value={userFlag}
                         onChangeText={(text) => setUserFlag(text)}
                     />
-                    <CustomButton title='Submit' type={'SECONDARY'} color={'white'} onPress={checkFlag}/>
+                    <CustomButton title='Submit' type={'PRIMARY'} color={'white'} onPress={checkFlag}/>
                 </View>
             </ImageBackground>
         </View>
