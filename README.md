@@ -28,4 +28,5 @@ Backend:
 
 ### 🤝 Contributions  
 Got ideas for improvement? Found a bug? Feel free to contribute or report issues to make this app even better!
----
+---![quizzApp](https://github.com/user-attachments/assets/03f7ffe6-19ea-4ca9-83bb-67ae09b11bf4)
+![quizzApp1](https://github.com/user-attachments/assets/2ace1c6b-01c8-4f02-9add-6f2fd56d6a38)
