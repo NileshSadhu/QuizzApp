@@ -4,7 +4,7 @@ import CustomInput from './CustomInput'
 import CustomButton from './CustomButton'
 import { QuizContext } from '../Context/Connection'
 
-const GuessCapital = ({ countryName }) => {
+const GuessCapital = ({ navigator }) => {
     const { isCorrect, currentQuestion, submitAnswer } = useContext(QuizContext);
     const [userans, setUserAns] = useState('');
     const [score, setScore] = useState(0);
