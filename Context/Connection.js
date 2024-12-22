@@ -20,7 +20,7 @@ export const QuizProvider = ({ children }) => {
 
     const getFlag = async () => {
         try {
-            const response = await axios.get("http://192.168.213.196:3000/flag");
+            const response = await axios.get("http://localhost:3000/flag");
             const { flag } = response.data;
             setCurrentFlag(flag);
             console.log("Fetched flag:", flag);
@@ -32,7 +32,7 @@ export const QuizProvider = ({ children }) => {
 
     const submitAnswer = async (answer) => {
         try {
-            const response = await axios.post("http://192.168.213.196:3000/submit", {
+            const response = await axios.post("http://localhost:3000/submit", {
                 answer,
             });
             const data = response.data;
@@ -47,7 +47,7 @@ export const QuizProvider = ({ children }) => {
 
     const submitFlagAnswer = async (answer) => {
         try {
-            const response = await axios.post("http://192.168.213.196:3000/submitflag", {
+            const response = await axios.post("http://localhost:3000/submitflag", {
                 answer,
             });
             const data = response.data;

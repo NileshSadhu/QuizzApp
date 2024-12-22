@@ -16,6 +16,7 @@ const AppNav = () => {
                     headerShown: false,
                     tabBarActiveTintColor: '#fff',
                     tabBarInactiveTintColor: '#000',
+                    tabBarHideOnKeyboard: true,
                     tabBarStyle: {
                         backgroundColor: '#ffca00',
                         elevation: 0,
