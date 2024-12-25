@@ -15,11 +15,11 @@
 
 ### 🛠️ Tech Stack  
 Frontend:
-- Built with [React Native and its cool library.].  
-- Easy-to-use interface for a seamless quiz experience.
+   - Built with [React Native and its cool library.].  
+   - Easy-to-use interface for a seamless quiz experience.
 Backend:
- - Developed using Node.js/Express.js.
- - PostgreSQL database for managing country, capital, and flag data efficiently.
+   - Developed using Node.js/Express.js.
+   - PostgreSQL database for managing country, capital, and flag data efficiently.
 
 ### 🚀 Get Started  
 - Clone the repository.  
